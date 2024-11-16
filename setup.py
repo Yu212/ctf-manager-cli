@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="cm-cli",
@@ -11,4 +11,5 @@ setup(
             "cm = cm.cli:cli",
         ],
     },
+    packages=find_packages(include=["cm", "cm.*"]),
 )
